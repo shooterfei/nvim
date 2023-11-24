@@ -79,7 +79,7 @@ function theme()
         type = "group",
         val = {
             button("e", "󱪝  New file", "<cmd>ene <CR>"),
-            button("f3", "󰙅  File tree", "<f3>"),
+            button("<leader>ft", "󰙅  File tree", "<f3>"),
             button("f9", "󰈞  Find file", "<f9>"),
             button("f10", "󰈞  Find file in git", "<f10>"),
             button("q", "  Quit", "<cmd>q<CR>"),

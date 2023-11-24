@@ -118,7 +118,8 @@ function M.config()
     -- nvim-lspconfig config
     -- List of all pre-configured LSP servers:
     -- github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-    local servers = { 'pylsp', 'clangd', 'html', 'cssls', 'sourcekit' }
+    local servers = { 'pylsp', 'clangd', 'html', 'cssls', 'sourcekit', 'lua_ls' }
+    require('mason-lspconfig').setup()
     local lspconfig = require('lspconfig')
     for _, lsp in pairs(servers) do
         lspconfig[lsp].setup {}

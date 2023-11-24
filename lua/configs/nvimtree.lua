@@ -24,9 +24,9 @@ function M.config()
 
     -- pass to setup along with your other options
     require("nvim-tree").setup {
-    ---
-    on_attach = my_on_attach,
-    ---
+        ---
+        on_attach = my_on_attach,
+        ---
     }
 end
 
